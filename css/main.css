@@ -5,109 +5,119 @@ html, body {
       width: 100%;
 }
 
+HTML SCSS JSResult
+
+.hoverable{
+  display:inline-block;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  position:relative;
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  tranform: translateZ(0);
+  transition-duration: .3s;
+  transition-property:transform;
+}
+
+.hoverable:before{
+  position:absolute;
+  pointer-events: none;
+  z-index:-1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height:10px;
+  width:90%;
+  opacity:0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+
+.hoverable:hover, .hoverable:active, .hoverable:focus{
+  transform: translateY(-5px);
+}
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+
+
+@keyframes bounce-animation {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation-name: bounce-animation;
+  animation-duration: 2s;
+}
+
+
+
+/*everything below here is just setting up the page, so dont worry about it */
+
+
+@media (min-width: 768px) {
+  .navbar{
+    text-align: center !important;
+    float: none;
+    display: inline-block;
+  }
+}
+
 body {
-      font-family: "Helvetica Neue",sans-serif;
-      font-weight: lighter;
-}
-
-
-
-.content {
-      width: 94%;
-      margin: 4em auto;
-      font-size: 20px;
-      line-height: 30px;
-      text-align: justify;
-}
-
-.logo {
-      line-height: 60px;
-      position: fixed;
-      float: left;
-      margin: 16px 46px;
-      color: #fff;
-      font-weight: bold;
-      font-size: 20px;
-      letter-spacing: 2px;
+  background-color: rgba(0,0,0,1);
+  font-weight:600;
+  text-align:center !important;
+  color: white;
 }
 
 nav {
-      position: fixed;
-      width: 100%;
-      padding-bottom: 10;
-      line-height: 60px;
+  background: none !important;
+  text-transform:uppercase;
+  li {
+    margin-left: 3em;
+    margin-right: 3em;
+    a{
+      transition: .5s color ease-in-out;
+    }
+  }
 }
 
-nav ul {
-      line-height: 60px;
-      list-style: none;
-      background: rgba(0, 0, 0, 0);
-      overflow: hidden;
-      color: #fff;
-      padding: 0;
-      text-align: right;
-      margin: 0;
-      padding-right: 40px;
-      transition: 1s;
+.page-title {
+  opacity: .75 !important;
 }
 
-nav.black ul {
-      background: #000;
-}
 
-nav ul li {
-      display: inline-block;
-      padding: 16px 40px;;
-}
 
-nav ul li a {
-      text-decoration: none;
-      color: #fff;
-      font-size: 16px;
-}
 
-.menu-icon {
-      line-height: 60px;
-      width: 100%;
-      background: #000;
-      text-align: right;
-      box-sizing: border-box;
-      padding: 15px 24px;
-      cursor: pointer;
-      color: #fff;
-      display: none;
-}
-
-@media(max-width: 786px) {
-
-      .logo {
-            position: fixed;
-            top: 0;
-            margin-top: 16px;
-      }
-
-      nav ul {
-            max-height: 0px;
-            background: #000;
-      }
-
-      nav.black ul {
-            background: #000;
-      }
-
-      .showing {
-            max-height: 34em;
-      }
-
-      nav ul li {
-            box-sizing: border-box;
-            width: 100%;
-            padding: 24px;
-            text-align: center;
-      }
-
-      .menu-icon {
-            display: block;
-      }
-
-}
