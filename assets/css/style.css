@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #efa84c;
 }
 
 #preloader:before {
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #fcd757;
+  background: #efa84c;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fcd757;
+  background: #efa84c;
   transition: all 0.5s;
   z-index: 997;
   height: 86px;
@@ -468,7 +468,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #fcd757;
+  color: #efa84c;
   font-family: "Poppins", sans-serif;
 }
 
@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #fcd757;
+  background: #efa84c;
 }
 
 #hero .btn-get-started:hover {
@@ -505,14 +505,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   transition: 0.5s;
   margin-left: 25px;
-  color: #fcd757;
+  color: #efa84c;
   font-weight: 600;
   display: flex;
   align-items: center;
 }
 
 #hero .btn-watch-video i {
-  color: #fcd757;
+  color: #efa84c;
   font-size: 32px;
   transition: 0.3s;
   line-height: 0;
@@ -566,7 +566,7 @@ section {
 }
 
 .section-bg {
-  background-color: #fcd757;
+  background-color: #efa84c;
 }
 
 .section-title {
@@ -581,7 +581,7 @@ section {
   padding: 8px 20px;
   margin: 0;
   background: #232c33;
-  color: #fcd757;
+  color: #efa84c;
   display: inline-block;
   text-transform: uppercase;
   border-radius: 50px;
@@ -595,7 +595,7 @@ section {
 }
 
 .section-title h3 span {
-  color: #fcd757;
+  color: #efa84c;
 }
 
 .section-title p {
@@ -670,7 +670,7 @@ section {
   padding: 30px;
   position: relative;
   overflow: hidden;
-  background: #fcd656;
+  background: #efa84c;
   box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -742,7 +742,7 @@ section {
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
-  color: #fcd757;
+  color: #efa84c;
 }
 
 .about .content ul {
@@ -761,7 +761,7 @@ section {
 }
 
 .about .content ul i {
-  background: #fcd757;
+  background: #efa84c;
   box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
   font-size: 24px;
   padding: 20px;
@@ -772,7 +772,7 @@ section {
 
 .about .content ul h5 {
   font-size: 18px;
-  color: #fcd757;
+  color: #efa84c;
 }
 
 .about .content ul p {
@@ -822,7 +822,7 @@ section {
   width: 1px;
   height: 10px;
   transition: .9s;
-  background-color: #106eea;
+  background-color: #efa84c;
 }
 
 /*--------------------------------------------------------------
@@ -850,12 +850,12 @@ section {
   transform: translateX(-50%);
   font-size: 24px;
   background: #232c33;
-  color: #fcd757;
+  color: #efa84c;
   width: 56px;
   height: 56px;
   line-height: 0;
   border-radius: 50px;
-  border: 5px solid #fcd757;
+  border: 5px solid #efa84c;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -865,7 +865,7 @@ section {
   font-size: 36px;
   display: block;
   font-weight: 600;
-  color: #fcd757;
+  color: #efa84c;
 }
 
 .counts .count-box p {
@@ -918,7 +918,7 @@ section {
   height: 64px;
   background: #232c33;
   border-radius: 4px;
-  border: 1px solid #fcd757;
+  border: 1px solid #efa84c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -927,7 +927,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  color: #fcd757;
+  color: #efa84c;
   font-size: 28px;
   transition: ease-in-out 0.3s;
 }
@@ -939,7 +939,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #fcd757;
+  color: #efa84c;
   transition: ease-in-out 0.3s;
 }
 
@@ -955,7 +955,7 @@ section {
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover .icon i {
-  color: #f2f79e;
+  color: #efa84c;
 }
 
 .services .icon-box:hover .icon {
@@ -1674,7 +1674,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #106eea;
+  background: #efa84c;
   color: #232c33;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -1687,7 +1687,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fcd757;
+  background: #efa84c;
 }
 
 #footer .footer-top .footer-contact {
@@ -1777,7 +1777,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #f2f79e;
+  background: #232c33;
   color: #fff;
   text-decoration: none;
 }
